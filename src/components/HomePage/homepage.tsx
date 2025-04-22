@@ -30,8 +30,8 @@ export default function HomePage() {
       try {
         const data = await getCars();
         setCars(data);
-      } catch (error) {
-        setError('Failed to fetch cars');
+      } catch (error.any) {
+        setError(error.message || 'Failed to fetch cars');
       } finally {
         setCarsLoading(false);
       }
