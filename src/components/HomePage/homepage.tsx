@@ -30,8 +30,12 @@ export default function HomePage() {
       try {
         const data = await getCars();
         setCars(data);
-      } catch (error.any) {
-        setError(error.message || 'Failed to fetch cars');
+      } catch (error.unknown) {
+        if (error instanceof Error) {
+      setError(error.message);
+    } else {
+      setError('Failed to fetch cars');
+    }
       } finally {
         setCarsLoading(false);
       }
@@ -42,8 +46,12 @@ export default function HomePage() {
         const data = await getTracks();
         console.log('Fetched Tracks:', data);
         setTracks(data);
-      } catch (error: any) {
-        setError(error.message || 'Failed to fetch tracks');
+      } catch (error: unknown) {
+        if (error instanceof Error) {
+      setError(error.message);
+    } else {
+      setError('Failed to fetch cars');
+    }
       } finally {
         setTracksLoading(false);
       }
