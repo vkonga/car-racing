@@ -32,10 +32,10 @@ export default function HomePage() {
         setCars(data);
       } catch (error.unknown) {
         if (error instanceof Error) {
-      setError(error.message);
-    } else {
-      setError('Failed to fetch cars');
-    }
+        setError(error.message);
+          } else {
+            setError('Failed to fetch cars');
+          }
       } finally {
         setCarsLoading(false);
       }
@@ -48,10 +48,10 @@ export default function HomePage() {
         setTracks(data);
       } catch (error: unknown) {
         if (error instanceof Error) {
-      setError(error.message);
-    } else {
-      setError('Failed to fetch cars');
-    }
+        setError(error.message);
+          } else {
+            setError('Failed to fetch cars');
+          }
       } finally {
         setTracksLoading(false);
       }
