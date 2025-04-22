@@ -1,0 +1,320 @@
+.bg-container{
+  width: 100%;
+  height: 100vh;
+
+}
+.image-container{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.heading{
+  color: white;
+  font-size: 5rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  position: absolute;
+  top: 340px;
+  left: 60px;
+
+}
+.strong{
+  color: transparent;
+  -webkit-text-stroke: 2px rgb(26, 197, 46);
+  font-size: 5rem;
+}
+.sub-title{
+  position: absolute;
+  top: 480px;
+  left: 60px;
+  color: white;
+  font-size: 1.3rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.types-description{
+  color: black;
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+}
+.cour-container{
+  margin-top: 40px;
+}
+.cars-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -200px;
+}
+.cursore-size{
+  width: 50px;
+  height: 50px;
+  background-color: rgb(234, 21, 21);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  border-radius: 50%;
+}
+.container{
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  position: relative;
+  top: 200px;
+}
+.block{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slide linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+
+}
+
+@keyframes slide {
+  0%{
+    scale: 0.5;
+    opacity: 0;
+    transform: translateX(220px);
+  }
+  90%{
+    scale: 1;
+    opacity: 1;
+    
+  }
+  100%{
+    transform: translateX(-100px) translateY(-200px) rotateZ(-15deg);
+  }
+}
+.blockin{
+  width: 400px;
+  height: 40px; 
+  margin-right: 10px;
+}
+.blockout{
+  width: 400px;
+  height: 400px;
+
+}
+.block1{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: slides linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+
+@keyframes slides {
+  0%{
+    scale: 0.5;
+    opacity: 0;
+    transform: translateX(-100px) ;
+  }
+  90%{
+    scale: 1;
+    opacity: 1;
+    
+  }
+  100%{
+    transform: translateX(300px) translateY(-200px) rotateZ(15deg) ;
+  }
+}
+.car-description{
+  color: black;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  font-style: italic;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  left: 250px;
+  z-index: -1;
+  animation: car-desc linear forwards;
+}
+
+@keyframes car-desc {
+  0%{
+  
+    opacity: 0;
+    transform: scale(0) translateY(0px) ;
+  }
+  90%{
+    scale: 0;
+    opacity: 0.6;
+  } 
+  100%{
+    transform: scale(1) translateX(300px) translateY(-200px);
+    opacity:1;
+    
+  }
+}
+
+.block2{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: slide-img linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  opacity: 0;
+  
+}
+
+@keyframes slide-img {
+  0%{
+    scale: 0.5;
+    opacity: 0;
+    transform: translateX(220px);
+  }
+  100%{
+    transform: translateX(-100px) translateY(-200px) rotateZ(-15deg);
+    opacity: 1;
+  }
+}
+
+.container1{
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  position: relative;
+  top: 150px;
+}
+.vehicles{
+  color: transparent;
+  -webkit-text-stroke: 2px red;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+.description-container{
+  background-color: rgb(17, 235, 82);
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.scrolls{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(0vh);
+  }
+  to {
+    transform: translateY(10vh);
+  }
+}
+
+.scroll-container {
+  
+  background-color: black;
+}
+
+.scroll-icon {
+  font-size: 40px;
+  position: sticky;
+  top: 20px;
+  animation: moveDown linear;
+  animation-timeline: scroll();
+  animation-range: 0% 100%;
+}
+.container2{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  perspective: 800px;
+  transform-style: preserve-3d;
+  position: relative;
+  left: 40px;
+  top: 100px;
+}
+.block3{
+  width: 400px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: track linear forwards;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+  opacity: 0;
+  z-index: -1;
+}
+
+@keyframes track {
+  0%{
+    scale: 0.5;
+    opacity: 0;
+    transform: translateX(-220px) translateY(0px);
+  }
+  100%{
+    transform: translateX(-100px) translateY(-150px) rotateZ(-15deg);
+    opacity: 1;
+  }
+}
+.loading-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  animation: loading 2s linear forwards;
+}
+.loading{
+  
+  animation: loading linear forwards;
+  width: 200px;
+  height: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  border-radius: 50px;
+}
+
+@keyframes loading {
+  0%{
+    
+    transform: translateX(-200px);
+    opacity: 1;
+  }
+  100%{
+    transform:translateX(300px);
+    opacity: 1;
+  }
+}

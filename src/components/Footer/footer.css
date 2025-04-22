@@ -1,0 +1,13 @@
+.footer-container {
+  background-color: #0d0d0e;
+  color: white;
+    z-index: 1;
+  text-align: center;
+  height: 600px;
+  animation-timeline: scroll();
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}

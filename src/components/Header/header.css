@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes headers {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+    
+}
+.logo{
+    color: white;
+    font-size: 3rem;
+}
+.nav-links{
+    color: white;
+    animation: headers 1s linear forwards;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.line{
+    width:3px;
+    
+    color: white;
+}
+.content{
+    margin-left: -20px;
+}
