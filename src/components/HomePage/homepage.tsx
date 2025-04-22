@@ -30,7 +30,7 @@ export default function HomePage() {
       try {
         const data = await getCars();
         setCars(data);
-      } catch (error.unknown) {
+      } catch (error:unknown) {
         if (error instanceof Error) {
         setError(error.message);
           } else {
